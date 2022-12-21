@@ -10,6 +10,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -50,8 +51,14 @@ a {
 }
 
                   /* =======header=========  */
-
-.header {
+.fixed-header {
+    position: sticky;
+    top:-26px;
+    padding-top: 26px;
+    background:#E6F0FF;
+    z-index: 1;
+}
+.hero-wapper {
     position: relative;
     background:#E6F0FF;
     height: 100vh;
@@ -61,8 +68,9 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
- 
+    /* padding-top: 38px; */
+    padding: 12px 0;
+    
 }
 
 .navbar ul {
