@@ -3,6 +3,8 @@
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
 }
 :root {
     --primary-color:#0F1B4C;
@@ -11,6 +13,8 @@ body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+
+ 
 
 }
 
@@ -51,6 +55,7 @@ a {
 }
 
                   /* =======header=========  */
+          
 .fixed-header {
     position: sticky;
     top:-26px;
@@ -60,8 +65,10 @@ a {
 }
 .hero-wapper {
     position: relative;
+    display: flex;
+    align-items: center;
     background:#E6F0FF;
-    height: 100vh;
+    height: calc(100vh - 90px);
 
 }       
 
@@ -119,9 +126,7 @@ a {
     width: 51%;
 
 }                 
-.hero {
-    padding-top: 130px;
-}                  
+                 
 
 .hero .sub-title {
     font-weight: 500;
@@ -430,8 +435,8 @@ a {
 
 
 .stats {
-    margin-top: 75px;
-    padding: 50px 0;
+
+    padding: 125px 0 50px;
 }
 
 .stats .content {
@@ -623,7 +628,7 @@ a {
 /* ============ Subscription ============= */
 
 .subscription {
-    margin-top: 90px;
+    padding-top: 90px;
 }
 
 .subscription .body {
